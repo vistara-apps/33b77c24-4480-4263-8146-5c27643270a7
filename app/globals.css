@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: hsl(230, 40%, 7%);
+  --accent: hsl(220, 40%, 50%);
+  --primary: hsl(210, 40%, 96.1%);
+  --surface: hsl(230, 40%, 12%);
+  --muted: hsl(230, 15%, 25%);
+  --border: hsl(230, 40%, 20%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--bg);
+  color: var(--primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, hsl(230, 40%, 7%) 0%, hsl(270, 30%, 10%) 100%);
+  min-height: 100vh;
+}
+
+@layer components {
+  .card {
+    @apply bg-surface border border-border rounded-lg shadow-card;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-3 rounded-lg font-medium hover:from-pink-600 hover:to-purple-600 transition-all duration-150 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-surface border border-border text-primary px-6 py-3 rounded-lg font-medium hover:bg-muted transition-all duration-150;
+  }
+  
+  .input {
+    @apply w-full px-4 py-3 bg-surface border border-border rounded-lg text-primary placeholder-muted focus:outline-none focus:border-accent transition-all duration-150;
+  }
+  
+  .floating-shape {
+    position: absolute;
+    opacity: 0.1;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .floating-shape:nth-child(1) { animation-delay: 0s; }
+  .floating-shape:nth-child(2) { animation-delay: -2s; }
+  .floating-shape:nth-child(3) { animation-delay: -4s; }
+  .floating-shape:nth-child(4) { animation-delay: -1s; }
+  .floating-shape:nth-child(5) { animation-delay: -3s; }
+  .floating-shape:nth-child(6) { animation-delay: -5s; }
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
