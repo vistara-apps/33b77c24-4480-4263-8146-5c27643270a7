@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "ProofStamp",
+    "subtitle": "Built with Zara",
+    "description": "ProofStamp is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://33b77c244480426381465c27643270a7-vwyu-kbc0c1bcw-vistara.vercel.app",
+    "splashImageUrl": "https://33b77c244480426381465c27643270a7-vwyu-kbc0c1bcw-vistara.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://33b77c244480426381465c27643270a7-vwyu-kbc0c1bcw-vistara.vercel.app/image.png",
+    "tagline": "ProofStamp",
+    "screenshotUrls": [
+      "https://33b77c244480426381465c27643270a7-vwyu-kbc0c1bcw-vistara.vercel.app/screenshot.png",
+      "https://33b77c244480426381465c27643270a7-vwyu-kbc0c1bcw-vistara.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://33b77c244480426381465c27643270a7-vwyu-kbc0c1bcw-vistara.vercel.app/api/webhook"
+  }
+}
